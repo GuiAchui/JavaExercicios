@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contas</title>
+</head>
+<body>
+    <script>
+        var num1 = parseFloat(prompt('Digite seu primeiro número: '));
+        var num2 = parseFloat(prompt('Digite seu segundo número: '));
+        var soma = num1 + num2;
+        var sub = num1 - num2;
+        var mult = num1 * num2;
+        var div = num1 / num2;
+        var op = prompt('Escolha a operação: \n + para soma \n - para subtração \n * para multiplicação \n / para divisão');
+
+        if(op==='+'){
+            document.write('A soma entre '+num1+' e '+num2+' é: '+soma);
+        } else if(op==='-'){
+            document.write('A subtração entre '+num1+' e '+num2+' é: '+sub);
+        } else if(op==='*'){
+            document.write('A multiplicação entre '+num1+' e '+num2+' é: '+mult);
+        } else if(op==='/'){
+            document.write('A divisão entre '+num1+' e '+num2+' é: '+div.toFixed(2));
+        } else{
+            document.write('Operação inválida');
+        }
+    </script>
+</body>
+</html>

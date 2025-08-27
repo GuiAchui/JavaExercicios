@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revisão</title>
+</head>
+<body>
+    <script>
+        var nome = prompt('Digite seu nome: ');
+        var nota = parseFloat(prompt('Digite sua nota: '));
+        var presença = parseInt(prompt('Digite sua presença (%): '));
+
+        if (nota >= 7 && nota <= 10 && presença >= 75) {
+            document.write('Aprovado');
+        } else if (nota >= 5 && nota < 7 && presença >= 75) {
+            document.write('Recuperação');
+        } else if (nota < 5 || presença < 75) {
+            document.write('Reprovado');
+        } else {
+            document.write('Nota inválida');
+        }
+    </script>
+</body>
+</html>
